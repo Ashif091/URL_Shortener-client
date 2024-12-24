@@ -1,30 +1,95 @@
-# React + TypeScript + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-Currently, two official plugins are available:
+# URL Shortener Client  
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Welcome to the **URL Shortener Client**! This is a front-end application designed to make managing and shortening URLs seamless and efficient. The project provides a user-friendly interface to shorten long URLs, manage your shortened links, and more, while maintaining secure and smooth user interactions.  
 
-## Expanding the ESLint configuration
+## Features  
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+### 🌟 Welcome Page  
+- A warm introduction to the purpose and features of the website.  
+- Provides an overview of how to use the URL shortener.  
 
-- Configure the top-level `parserOptions` property like this:
+### 🔐 Authentication  
+- **Login/Logout** functionality.  
+- User session management using **Redux** and **access tokens**.  
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
+### ✂️ URL Shortener  
+- Convert long URLs into shorter, shareable links effortlessly.  
+- Manage your shortened URLs:  
+  - **Visit** the shortened URLs.  
+  - **Delete** links as needed.  
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+### ⚙️ User Management  
+- View your login information after successful authentication.  
+
+## Tech Stack  
+
+- **React**: For building the user interface.  
+- **Redux**: For state management, including user authentication and URL management.  
+- **Axios**: For handling API requests.  
+- **React Router**: For seamless navigation between pages.  
+- **Tailwind CSS**: For styling the application.  
+
+## Setup  
+
+Follow these steps to run the client locally:  
+
+1. Clone the repository:  
+   ```bash  
+   git clone https://github.com/Ashif091/URL_Shortener-client
+   cd url-shortener-client  
+   ```  
+
+2. Install dependencies:  
+   ```bash  
+   npm install  
+   ```  
+
+3. Create a `.env` file in the root directory and add the following environment variables:  
+   ```env  
+   REACT_APP_API_URL=your_backend_api_url  
+   ```  
+
+4. Start the development server:  
+   ```bash  
+   npm start  
+   ```  
+
+5. Open your browser and navigate to:  
+   ```
+   http://localhost:3000  
+   ```  
+
+## Folder Structure  
+
+```plaintext  
+src/  
+├── components/           # Reusable UI components  
+├── pages/                # Main application pages (Welcome, Shortener, etc.)  
+├── redux/                # Redux store, slices, and actions  
+├── services/             # API integration services  
+├── styles/               # Custom styles (if any)  
+├── App.js                # Application entry point  
+└── index.js              # Main render file  
+```  
+
+## Contributing  
+
+Contributions are always welcome! If you'd like to improve the app, follow these steps:  
+
+1. Fork the repository.  
+2. Create a new branch:  
+   ```bash  
+   git checkout -b feature-name  
+   ```  
+3. Commit your changes:  
+   ```bash  
+   git commit -m "Add some feature"  
+   ```  
+4. Push to the branch:  
+   ```bash  
+   git push origin feature-name  
+   ```  
+5. Open a pull request.  
+
