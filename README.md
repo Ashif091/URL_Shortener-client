@@ -1,30 +1,50 @@
-# React + TypeScript + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# URL Shortener Client  
 
-Currently, two official plugins are available:
+Welcome to the **URL Shortener Client**! This is a front-end application designed to make managing and shortening URLs seamless and efficient. The project provides a user-friendly interface to shorten long URLs, manage your shortened links, and more, while maintaining secure and smooth user interactions.  
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Features  
 
-## Expanding the ESLint configuration
+### 🌟 Welcome Page  
+- A warm introduction to the purpose and features of the website.  
+- Provides an overview of how to use the URL shortener.  
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+### 🔐 Authentication  
+- **Login/Logout** functionality.  
+- User session management using **Redux** and **access tokens**.  
 
-- Configure the top-level `parserOptions` property like this:
+### ✂️ URL Shortener  
+- Convert long URLs into shorter, shareable links effortlessly.  
+- Manage your shortened URLs:  
+  - **Visit** the shortened URLs.  
+  - **Delete** links as needed.  
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
+### ⚙️ User Management  
+- View your login information after successful authentication.  
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+## Tech Stack  
+
+- **React**: For building the user interface.  
+- **Redux**: For state management, including user authentication and URL management.  
+- **Axios**: For handling API requests.  
+- **React Router**: For seamless navigation between pages.  
+- **Tailwind CSS**: For styling the application.  
+
+## Setup  
+
+Follow these steps to run the client locally:  
+
+1. Clone the repository:  
+   ```bash  
+   git clone https://github.com/Ashif091/URL_Shortener-client 
+   cd url-shortener-client  
+   ```  
+
+2. Install dependencies:  
+   ```bash  
+   npm install  
+   ```  
+
+3. Create a `.env` file in the root directory and add the following environment variables:  
+   ```env  
+  
